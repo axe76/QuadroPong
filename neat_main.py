@@ -93,13 +93,6 @@ class Ball:
     def draw(self,win):
         win.blit(self.ball_img,(self.x,self.y))
 
-    def reset(self):
-        # try reseting the paddle position
-        self.x = 400
-        self.y = 400
-        self.velocity = [randint(1,2),randint(-2,2)]
-        
-        return 
     
 def draw_win(win,paddles,ball):
     win.fill((50,50,50))

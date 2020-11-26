@@ -162,11 +162,16 @@ def main(genomes,config):
                 paddle.move_paddle(1)
 
         for x,paddle in enumerate(paddles):
+            if paddle.id == 0 or paddle.id == 1:
+                ge[x].fitness -= 0.01*abs(330-paddle.y)
+            if paddle.id == 2 or paddle.id == 3:
+                ge[x].fitness -= 0.01*abs(330-paddle.x)
+            
             if ball.collide(paddle):
-                ge[x].fitness += 5
+                ge[x].fitness += 10
             
             if not paddle.hit:
-                ge[x].fitness -= 1
+                ge[x].fitness -= 5
                 paddles.pop(x)
                 nets.pop(x)
                 ge.pop(x)

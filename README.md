@@ -8,6 +8,7 @@
 
 # QuadroPong
 
+This project uses NEAT algorithm to achieve competitive multiagent learning on a modified pong game environment. The algorithm defines a singular neuroevolutionary procedure to train all the agents simultaneously, such that optimal policy is achieved quickly.
 
 ## Cloning
 ```bash

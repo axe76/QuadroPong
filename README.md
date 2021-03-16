@@ -25,6 +25,9 @@ For AI:
 $ python3 neat_quadro_paddle.py
 ```
 
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/36446402/111367409-b98d0d00-86ba-11eb-89c4-bf001e162ea5.gif)
+
+
 For Single Player:
 ```bash
 $ python3 main.py

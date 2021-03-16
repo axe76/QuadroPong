@@ -1,0 +1,5 @@
+neat_python==0.92
+matplotlib==3.2.2
+pygame==2.0.1
+numpy==1.19.5
+neat==0.4.1
